@@ -22,8 +22,7 @@ cursor.execute("CREATE INDEX IF NOT EXISTS ind_email ON Users (email)")
 # for i in range(1, 10, 2):
 #     cursor.execute("UPDATE Users SET balance = ? WHERE username = ?",
 #                    (500, f"User{i}"))
-'''удаляем каждую 3ю запись начиная с первой (не сделано)'''
-# cursor.execute("DELETE FROM Users WHERE username = ?", ("newuser",))
+'''удаляем каждую 3ю запись начиная с первой'''
 # for i in range(1, 10+1, 3):
 #     cursor.execute("DELETE FROM Users WHERE id = ?"  , (i,))
 '''проводим выборку всех записей, где возраст больше 60 
